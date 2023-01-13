@@ -21,7 +21,10 @@
 		<header class="header">
 			<div class="container">
 				<div class="header__inner">
-					<a href="" class="header__logo"><img src="./src/logo.svg" alt="" width="74" height="33" /></a>
+					<div class="header__burger">
+						<button type="button" class="burger"><span></span></button>
+						<a href="" class="header__logo"><img src="./src/logo.svg" alt="" width="74" height="33" /></a>
+					</div>
 					<nav class="nav">
 						<ul class="nav__list">
 							<li><a class="nav__link nav__link--active" href="">Hauptseite</a></li>
@@ -32,10 +35,31 @@
 					</nav>
 					<button class="header__language">
 						<span class="header__language-text">Ger</span>
-						<img src="./src/lang.svg" width="20" height="20" alt="" />
+						<img src="./src/lang.svg" width="24" height="24" alt="" />
 						<img src="./src/lang-triangle.svg" alt="" width="6" height="6" />
 					</button>
 					<a href="" class="header__registration">Anmeldung</a>
+					<div class="footer__contact">
+						<div class="footer__contact-body">
+							<a href="" class="footer__logo"
+								><img src="./src/logo.svg" alt="" width="93" height="41"
+							/></a>
+							<p class="footer__contact-description">
+								CEX.io ist der beste Ort, um etwas über Krypto zu lernen.
+							</p>
+						</div>
+						<ul class="footer__socials-list">
+							<li class="footer__socilas-item">
+								<img src="./src/socials/1.svg" alt="" width="24" height="24" />
+							</li>
+							<li class="footer__socilas-item">
+								<img src="./src/socials/2.svg" alt="" width="24" height="24" />
+							</li>
+							<li class="footer__socilas-item">
+								<img src="./src/socials/3.svg" alt="" width="24" height="24" />
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</header>
@@ -52,7 +76,15 @@
 					</p>
 					<a href="" class="button">Loslegen</a>
 				</div>
-				<img src="./src/intro-pc.jpg" alt="" width="683" height="683" class="intro__img" />
+				<picture>
+					<source
+						media="(max-width:576px)"
+						srcset="/src/intro-mobile.jpg 319w"
+						sizes="319px"
+						type="image/svg+xml"
+					/>
+					<img src="./src/intro-pc.jpg" alt="" width="683" height="683" class="intro__img" />
+				</picture>
 			</section>
 			<section class="section partners container">
 				<h2 class="section__title section__title--small">
@@ -109,7 +141,17 @@
 				</ul>
 			</section>
 			<section class="section services container">
-				<img src="./src/services.jpg" alt="" width="610" height="386" class="section__img" />
+				<div class="services__wrapper">
+					<picture>
+						<source
+							media="(max-width:576px)"
+							srcset="/src/services-small.jpg 375w"
+							sizes="375px"
+							type="image/svg+xml"
+						/>
+						<img src="./src/services.jpg" alt="" width="610" height="386" class="section__img" />
+					</picture>
+				</div>
 				<div class="section__body">
 					<h1 class="section__title section__title--small">
 						<span class="section__accent">Kaufen</span> und halten oder mit Hebelwirkung handeln
@@ -204,6 +246,9 @@
 						</blockquote>
 					</li>
 				</ul>
+				<div class="reviews__wrapper">
+					<a href="" class="button">Mehr Info</a>
+				</div>
 			</section>
 			<section class="section subscribe container">
 				<img src="./src/subscribe.jpg" alt="" width="580" height="349" class="section__img" />
@@ -219,7 +264,7 @@
 						<input type="text" name="name2" placeholder="Name" />
 						<input type="tel" name="telphone" placeholder="Telefonnummer" />
 						<input type="email" name="email" placeholder="Email" />
-						<button type="submit" class="button">Mehr Info</button>
+						<button type="submit" class="button">Weitermachen</button>
 					</form>
 				</div>
 			</section>
@@ -297,5 +342,6 @@
 				</div>
 			</div>
 		</footer>
+		<script src="./js/script.js"></script>
 	</body>
 </html>
