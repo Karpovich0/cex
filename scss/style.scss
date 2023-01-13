@@ -97,6 +97,20 @@ body {
         }
     }
 }
+.swiper {
+    .reviews__list {
+        column-gap: 0;
+        max-width: 100%;
+        flex-direction: row;
+        display: flex;
+    }
+    .swiper-slide {
+        width: 90%;
+        blockquote {
+            margin: 16px;
+        }
+    }
+}
 @import "header";
 @import "sections";
 @import "footer";

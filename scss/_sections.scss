@@ -58,7 +58,7 @@
         font-size: 40px;
         line-height: 54px;
         @media (max-width: $width-pc) {
-            font-size: 32px;
+            font-size: 34px;
             line-height: 40px;
         }
         @media (max-width: $width-mobile) {
@@ -88,7 +88,7 @@
         margin-bottom: 30px;
         font-style: normal;
         font-weight: 400;
-        font-size: 18px;
+        font-size: 19px;
         line-height: 160%;
         @media (max-width: $width-mobile) {
             font-size: 15px;
@@ -134,7 +134,7 @@
 }
 .about {
     &__header {
-        margin-bottom: 100px;
+        margin-bottom: 88px;
         display: grid;
         grid-template-columns: 480px minmax(auto, 581px);
         justify-content: space-between;
@@ -343,9 +343,21 @@
     }
 }
 .reviews {
+    @media (max-width: $width-pc) {
+        margin-bottom: 84px;
+    }
+    @media (max-width: $width-tablet) {
+        margin-bottom: 64px;
+    }
+    @media (max-width: $width-mobile) {
+        padding: 0;
+    }
     .section__body {
         margin: 0 auto;
         max-width: 596px;
+        @media (max-width: $width-mobile) {
+            padding: 0 16px;
+        }
     }
     .section__title--small {
         text-align: center;
@@ -355,7 +367,7 @@
         }
     }
     .section__text {
-        margin-bottom: 50px;
+        margin-bottom: 34px;
         font-family: $font-inter;
         font-style: normal;
         font-weight: 400;
@@ -381,18 +393,7 @@
     }
 
     .button {
-        margin: 50px auto 0;
-    }
-
-    &__item:last-child {
-        @media (max-width: $width-tablet) {
-            display: none;
-        }
-    }
-    &__item:nth-child(2) {
-        @media (max-width: $width-tablet-small) {
-            display: none;
-        }
+        margin: 38px auto 0;
     }
 
     &__head {
@@ -468,6 +469,8 @@
         flex-direction: column;
     }
     input {
+        width: 100%;
+        max-width: 380px;
         margin-bottom: 15px;
         padding: 11px 20px;
         border: 2px solid #c0c0c0;
@@ -479,9 +482,14 @@
 
         color: #d1d1d1;
     }
+    &__wrapper {
+        display: flex;
+        justify-content: start;
+    }
     .button {
         margin-top: 5px;
         border: none;
+        cursor: pointer;
         @media (max-width: $width-mobile) {
             margin-top: 15px;
         }
@@ -507,5 +515,8 @@
                 text-align: center;
             }
         }
+    }
+    .section__text {
+        margin-bottom: 15px;
     }
 }

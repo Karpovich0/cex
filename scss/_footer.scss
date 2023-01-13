@@ -57,9 +57,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
         border: 1.5px solid #5fc6c1;
         border-radius: 50%;
+        cursor: pointer;
     }
     &__page-navigation {
         margin-bottom: 50px;
@@ -110,6 +110,10 @@
         font-size: 15px;
         line-height: 160%;
         color: #d1d1d1;
+        transition: color 0.2s ease;
+        &:hover {
+            color: #ffffff;
+        }
     }
 
     &__copyright {
@@ -118,6 +122,15 @@
         justify-content: center;
         column-gap: 6px;
 
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+
         grid-column: 1/-1;
+        @media (max-width: $width-mobile) {
+            font-family: $font-inter;
+            font-size: 14px;
+            line-height: 17px;
+        }
     }
 }

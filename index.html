@@ -15,6 +15,7 @@
 		<!-- styles -->
 		<link rel="stylesheet" href="./css/normalize.css" />
 		<link rel="stylesheet" href="./css/drop-default-styles.css" />
+		<link rel="stylesheet" href="./css/swiper-bundle.min.css" />
 		<link rel="stylesheet" href="./css/style.css" />
 	</head>
 	<body>
@@ -205,47 +206,67 @@
 						verkaufen, kaufen und handeln
 					</p>
 				</div>
-				<ul class="reviews__list">
-					<li class="reviews__item">
-						<blockquote class="reviews__blockquote">
-							<div class="reviews__head">
-								<img src="./src/reviews/1.png" alt="" class="reviews__avatar" width="50" height="50" />
-								<cite>Harry Potter</cite>
-							</div>
-							<p class="reviews__text">
-								„Das ist wirklich etwas für Millennials. Nicht kompliziert, informativ, aber sauber.
-								Fluid ist auch ein Übergang. Der Investmentmanager tut viel. Jetzt nur noch Avrist,
-								Pinnacle, Simas, Majoris.“
-							</p>
-						</blockquote>
-					</li>
-					<li class="reviews__item">
-						<blockquote class="reviews__blockquote">
-							<div class="reviews__head">
-								<img src="./src/reviews/2.png" alt="" class="reviews__avatar" width="50" height="50" />
-								<cite>Peter Parker</cite>
-							</div>
-							<p class="reviews__text">
-								„Das ist wirklich etwas für Millennials. Nicht kompliziert, informativ, aber sauber.
-								Fluid ist auch ein Übergang. Der Investmentmanager tut viel. Jetzt nur noch Avrist,
-								Pinnacle, Simas, Majoris.“
-							</p>
-						</blockquote>
-					</li>
-					<li class="reviews__item">
-						<blockquote class="reviews__blockquote">
-							<div class="reviews__head">
-								<img src="./src/reviews/3.png" alt="" class="reviews__avatar" width="50" height="50" />
-								<cite>Toney Stark</cite>
-							</div>
-							<p class="reviews__text">
-								„Das ist wirklich etwas für Millennials. Nicht kompliziert, informativ, aber sauber.
-								Fluid ist auch ein Übergang. Der Investmentmanager tut viel. Jetzt nur noch Avrist,
-								Pinnacle, Simas, Majoris.“
-							</p>
-						</blockquote>
-					</li>
-				</ul>
+				<div class="swiper-container swiper">
+					<ul class="reviews__list swiper-wrapper">
+						<li class="reviews__item swiper-slide">
+							<blockquote class="reviews__blockquote">
+								<div class="reviews__head">
+									<img
+										src="./src/reviews/1.png"
+										alt=""
+										class="reviews__avatar"
+										width="50"
+										height="50"
+									/>
+									<cite>Harry Potter</cite>
+								</div>
+								<p class="reviews__text">
+									„Das ist wirklich etwas für Millennials. Nicht kompliziert, informativ, aber sauber.
+									Fluid ist auch ein Übergang. Der Investmentmanager tut viel. Jetzt nur noch Avrist,
+									Pinnacle, Simas, Majoris.“
+								</p>
+							</blockquote>
+						</li>
+						<li class="reviews__item swiper-slide">
+							<blockquote class="reviews__blockquote">
+								<div class="reviews__head">
+									<img
+										src="./src/reviews/2.png"
+										alt=""
+										class="reviews__avatar"
+										width="50"
+										height="50"
+									/>
+									<cite>Peter Parker</cite>
+								</div>
+								<p class="reviews__text">
+									„Das ist wirklich etwas für Millennials. Nicht kompliziert, informativ, aber sauber.
+									Fluid ist auch ein Übergang. Der Investmentmanager tut viel. Jetzt nur noch Avrist,
+									Pinnacle, Simas, Majoris.“
+								</p>
+							</blockquote>
+						</li>
+						<li class="reviews__item swiper-slide">
+							<blockquote class="reviews__blockquote">
+								<div class="reviews__head">
+									<img
+										src="./src/reviews/3.png"
+										alt=""
+										class="reviews__avatar"
+										width="50"
+										height="50"
+									/>
+									<cite>Toney Stark</cite>
+								</div>
+								<p class="reviews__text">
+									„Das ist wirklich etwas für Millennials. Nicht kompliziert, informativ, aber sauber.
+									Fluid ist auch ein Übergang. Der Investmentmanager tut viel. Jetzt nur noch Avrist,
+									Pinnacle, Simas, Majoris.“
+								</p>
+							</blockquote>
+						</li>
+					</ul>
+				</div>
 				<div class="reviews__wrapper">
 					<a href="" class="button">Mehr Info</a>
 				</div>
@@ -264,7 +285,9 @@
 						<input type="text" name="name2" placeholder="Name" />
 						<input type="tel" name="telphone" placeholder="Telefonnummer" />
 						<input type="email" name="email" placeholder="Email" />
-						<button type="submit" class="button">Weitermachen</button>
+						<div class="subscribe__wrapper">
+							<button type="submit" class="button">Weitermachen</button>
+						</div>
 					</form>
 				</div>
 			</section>
@@ -343,5 +366,7 @@
 			</div>
 		</footer>
 		<script src="./js/script.js"></script>
+		<script src="./js/swiper-bundle.min.js"></script>
+		<script src="./js/swiper.js"></script>
 	</body>
 </html>
