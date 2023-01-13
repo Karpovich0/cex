@@ -1,0 +1,212 @@
+.intro {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 530px 1fr;
+    align-items: center;
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+.section {
+    margin-bottom: 150px;
+    &__body {
+    }
+
+    &__title {
+        margin-bottom: 15px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 54px;
+        &--small {
+            font-size: 32px;
+            line-height: 44px;
+        }
+    }
+    &__accent {
+        background: linear-gradient(91.57deg, #10a399 41.15%, #32d3c9 85.26%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &__text {
+        margin-bottom: 30px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 160%;
+    }
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+.partners {
+    .section__title {
+        text-align: center;
+    }
+    &__list {
+        margin-top: 50px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 46px;
+    }
+}
+.about {
+    &__header {
+        margin-bottom: 100px;
+        display: grid;
+        grid-template-columns: 480px minmax(auto, 581px);
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 50px;
+    }
+    .section__text {
+        margin-bottom: 0;
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 20px;
+    }
+    &__section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+            margin-bottom: 15px;
+        }
+        h3 {
+            margin-bottom: 5px;
+
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 27px;
+            color: $color-green;
+
+            text-align: center;
+        }
+        p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 160%;
+            text-align: center;
+            text-align: center;
+        }
+    }
+}
+
+.services {
+    display: grid;
+    align-items: center;
+    grid-template-columns: minmax(auto, 610px) 480px;
+    justify-content: space-between;
+    column-gap: 50px;
+    .section__img {
+        border-radius: 30px;
+    }
+}
+.experts {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 575px minmax(auto, 463px);
+
+    justify-content: space-between;
+    column-gap: 50px;
+}
+.market {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 575px;
+    column-gap: 35px;
+}
+.reviews {
+    .section__body {
+        margin: 0 auto;
+        max-width: 596px;
+    }
+    .section__title--small {
+        text-align: center;
+    }
+    .section__text {
+        margin-bottom: 50px;
+        font-family: $font-inter;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 150%;
+
+        text-align: center;
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+    }
+
+    &__item {
+    }
+
+    &__head {
+        margin-bottom: 30px;
+        display: flex;
+        column-gap: 7px;
+        align-items: center;
+        cite {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22px;
+            color: $color-green;
+        }
+    }
+    &__blockquote {
+        padding: 30px 30px 45px;
+
+        background: #fcfcfc;
+
+        box-shadow: 4px 4px 16px rgba(52, 52, 52, 0.25);
+        border-radius: 20px;
+    }
+    &__avatar {
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+    }
+}
+.subscribe {
+    display: grid;
+    align-items: center;
+    grid-template-columns: minmax(auto, 580px) 480px;
+    column-gap: 50px;
+    justify-content: space-between;
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+    input {
+        margin-bottom: 15px;
+        padding: 13px 20px;
+        border: 2px solid #c0c0c0;
+        border-radius: 10px;
+
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 160%;
+
+        color: #d1d1d1;
+    }
+    .button {
+        margin-top: 5px;
+        border: none;
+    }
+}

@@ -1,0 +1,40 @@
+$font-inter: "Inter", sans-serif;
+$font-open-sans: "Open Sans", sans-serif;
+$color-black: #333333;
+$color-green: #269e96;
+$width-pc: 1200px;
+* {
+    scroll-behavior: smooth;
+}
+html {
+    height: 100%;
+}
+body {
+    position: relative;
+    min-height: 100vh;
+    font-family: $font-open-sans;
+    font-size: 14px;
+    font-style: normal;
+    color: $color-black;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1260px;
+    padding: 0 40px;
+}
+.button {
+    padding: 12px 60px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #ffffff;
+
+    border-radius: 6px;
+
+    background: linear-gradient(92.56deg, #10a399 -81.74%, #32d3c9 100%);
+}
+@import "header";
+@import "sections";
+@import "footer";
