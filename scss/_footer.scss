@@ -107,10 +107,13 @@
     &__link {
         font-style: normal;
         font-weight: 400;
-        font-size: 15px;
-        line-height: 160%;
+        font-size: 16px;
+        line-height: 140%;
         color: #d1d1d1;
         transition: color 0.2s ease;
+        @media (max-width: $width-mobile) {
+            line-height: 150%;
+        }
         &:hover {
             color: #ffffff;
         }
