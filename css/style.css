@@ -89,9 +89,9 @@ body {
   -webkit-border-radius: 1px;
           border-radius: 1px;
   height: 2px;
-  -webkit-transform: background-color 0.2s ease;
-      -ms-transform: background-color 0.2s ease;
-          transform: background-color 0.2s ease;
+  -webkit-transition: background-color 0.2s ease;
+  -o-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
 }
 
 .burger span::before {
@@ -104,9 +104,11 @@ body {
   background-color: #333333;
   -webkit-border-radius: 1px;
           border-radius: 1px;
-  -webkit-transform: transform 0.2s ease;
-      -ms-transform: transform 0.2s ease;
-          transform: transform 0.2s ease;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  -o-transition: transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
 
 .burger span::after {
@@ -119,9 +121,11 @@ body {
   background-color: #333333;
   -webkit-border-radius: 1px;
           border-radius: 1px;
-  -webkit-transform: transform 0.2s ease;
-      -ms-transform: transform 0.2s ease;
-          transform: transform 0.2s ease;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  -o-transition: transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
 
 .swiper .reviews__list {
@@ -1389,6 +1393,26 @@ body {
 @media (max-width: 576px) {
   .subscribe .section__text {
     margin-bottom: 30px;
+  }
+}
+
+.subscribe--mobile {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .subscribe--mobile {
+    display: block;
+  }
+}
+
+.subscribe--pc {
+  display: block;
+}
+
+@media (max-width: 576px) {
+  .subscribe--pc {
+    display: none;
   }
 }
 

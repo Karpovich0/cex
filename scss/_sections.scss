@@ -528,4 +528,16 @@
             margin-bottom: 30px;
         }
     }
+    &--mobile {
+        display: none;
+        @media (max-width: $width-mobile) {
+            display: block;
+        }
+    }
+    &--pc {
+        display: block;
+        @media (max-width: $width-mobile) {
+            display: none;
+        }
+    }
 }
